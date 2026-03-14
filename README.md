@@ -1,6 +1,6 @@
 # Stack Navigation
 
-Ứng dụng React Native sử dụng Expo để kiểm tra định dạng số điện thoại Việt Nam và chuyển sang `HomeScreen` khi người dùng nhập hợp lệ.
+Ứng dụng React Native sử dụng Expo, React Navigation và Context API để xây dựng luồng đăng nhập đơn giản với `Auth Stack` và `Main Stack`.
 
 ## Thông tin
 
@@ -8,20 +8,21 @@
 
 ## Chức năng
 
-- Format số điện thoại theo dạng `096 542 55 88`
-- Hiển thị lỗi khi số điện thoại không đúng định dạng
-- Điều hướng sang màn hình `Trang chủ` khi nhập đúng
+- Quản lý trạng thái đăng nhập toàn cục bằng `Context API`
+- `Auth Stack` gồm `SignIn`, `SignUp`, `ForgotPassword`
+- `Main Stack` gồm bottom tabs với `Trang chủ` và `Hồ sơ`
+- Đăng nhập thành công sẽ chuyển sang luồng chính, `Sign Out` sẽ quay về màn hình đăng nhập
 
 ## Ảnh minh họa
 
-### 1. Số điện thoại sai định dạng
+### 1. Màn hình đăng nhập
 
-![Số điện thoại sai định dạng](./screenshots/validation-error.png)
+![Màn hình đăng nhập](./screenshots/sign-in-screen.jpg)
 
-### 2. Số điện thoại hợp lệ
+### 2. Màn hình Trang chủ
 
-![Số điện thoại hợp lệ](./screenshots/validation-success.png)
+![Màn hình Trang chủ](./screenshots/home-screen.jpg)
 
-### 3. Màn hình Trang chủ
+### 3. Màn hình Hồ sơ
 
-![Màn hình Trang chủ](./screenshots/home-screen.png)
+![Màn hình Hồ sơ](./screenshots/profile-screen.jpg)
